@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To_Do_list</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-4 offset-4">
+            <div class="input-group mb-3 ">
+                <input id="type-here" type="text" class="form-control shadow-none" placeholder="Type here...">
+                <div class="input-group-append">
+                   <button id="add-button" type="submit" class="btn btn-success shadow-none border-0" onclick="addList()">Add</button>
+                </div>
+            </div>
+
+            <div  class="progress mt-5">
+                <div class="progress-bar progress-bar-striped" id="progress-bar">
+                    <div id="prog" class="position-relative text-center" style="width: 0%">0%</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-6 border-right">
+            <h3 class="text-center mb-3">To Do List</h3>
+            <div id="todo-list" ></div>
+        </div>
+        <div  class="col-6 ">
+            <h3 class="text-center mb-3">Done List</h3>
+            <div id="done-list" ></div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
